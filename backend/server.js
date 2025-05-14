@@ -2,13 +2,14 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import VendaMensal from './VendaMensal.js';
+import cors from "cors"
 
 dotenv.config()
 const app = express();
 const PORT = 3000
 
-
 //Middleware = função que trata as informações recebidas
+app.use(cors())
 app.use(express.json()) //converte body em json
 
 const connectDB = async () => {
