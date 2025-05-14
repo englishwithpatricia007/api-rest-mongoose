@@ -69,7 +69,7 @@ Navegue até a pasta backend/
 `cd backend`
 
 1. Instale as dependências
-   `npm install`
+   `npm install` `npm install firebase`
 2. Inicie o servidor
    `node server.js`
 
